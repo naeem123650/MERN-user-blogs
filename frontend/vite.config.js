@@ -7,4 +7,7 @@ export default defineConfig({
   server: {
     port: 5000,
   },
+  build: {
+    outDir: "dist", // Ensure this matches the publish directory in Render
+  },
 });
