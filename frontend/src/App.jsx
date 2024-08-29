@@ -7,8 +7,8 @@ import Sorry from "./components/Sorry";
 import Register from "./components/Register";
 import BlogList from "./components/BlogList";
 import MyBlogs from "./components/MyBlogs";
-import WithAuth from "./hoc/withAuth";
 import WithGuest from "./hoc/withGuest";
+import WithAuth from "./hoc/WithAuth";
 
 const ProtectedMyBlogs = WithAuth(MyBlogs);
 const GuestLogin = WithGuest(Login);
