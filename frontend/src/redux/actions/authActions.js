@@ -6,7 +6,7 @@ export const REGISTER_SUCCESS = "REGISTER_SUCCESS";
 export const REGISTER_FAIL = "REGISTER_FAIL";
 export const LOGOUT = "LOGOUT";
 
-const api_url = `${import.meta.env.REACT_APP_API_URL}/auth`;
+const api_url = `${import.meta.env.VITE_API_URL}/auth`;
 
 export const login = (email, password) => async (dispatch) => {
   try {
