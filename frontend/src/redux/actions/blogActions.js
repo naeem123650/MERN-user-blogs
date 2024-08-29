@@ -11,7 +11,7 @@ export const DELETE_BLOG_FAIL = "DELETE_BLOG_FAIL";
 export const USER_BLOG_SUCCESS = "USER_BLOG_SUCCESS";
 export const USER_BLOG_FAIL = "USER_BLOG_FAIL";
 
-const api_url = "http://localhost:3000/api/blogs";
+const api_url = `${import.meta.env.VITE_API_URL}/blogs`;
 
 export const fetchBlogs = () => async (dispatch) => {
   try {

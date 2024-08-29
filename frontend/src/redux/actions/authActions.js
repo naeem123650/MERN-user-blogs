@@ -6,7 +6,7 @@ export const REGISTER_SUCCESS = "REGISTER_SUCCESS";
 export const REGISTER_FAIL = "REGISTER_FAIL";
 export const LOGOUT = "LOGOUT";
 
-const api_url = "http://localhost:3000/api/auth/";
+const api_url = `${import.meta.env.VITE_API_URL}/auth`;
 
 export const login = (email, password) => async (dispatch) => {
   try {
