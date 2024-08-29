@@ -46,4 +46,4 @@ jobs:
         - name: Deploy to production
           if: github.ref == 'refs/heads/main' && github.event_name == 'push'
           run: |
-            echo "Deploying application..."
+            echo "Deploying application...."
