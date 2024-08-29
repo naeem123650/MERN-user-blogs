@@ -14,11 +14,11 @@ const registerValidationRules = () => {
       .withMessage("Password is required")
       .isLength({ min: 6 })
       .withMessage("Password must be at least 6 characters long"),
-    check("confirmPassword")
-      .notEmpty()
-      .withMessage("Confirm password is required")
-      .custom((value, { req }) => value === req.body.password)
-      .withMessage("Passwords do not match"),
+    // check("confirmPassword")
+    //   .notEmpty()
+    //   .withMessage("Confirm password is required")
+    //   .custom((value, { req }) => value === req.body.password)
+    //   .withMessage("Passwords do not match"),
   ];
 };
 
