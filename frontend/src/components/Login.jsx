@@ -17,7 +17,7 @@ const Login = () => {
   };
 
   if (isAuthenticated) {
-    navigate("/blogs"); // Use navigate to redirect
+    navigate("/all-blogs"); // Use navigate to redirect
   }
 
   return (

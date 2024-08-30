@@ -20,7 +20,7 @@ const Navbar = () => {
               <Link to="/your-blogs" className="mr-4">
                 Your Blogs
               </Link>
-              <Link to="/blogs" className="mr-4">
+              <Link to="/all-blogs" className="mr-4">
                 All Blogs
               </Link>
               <button
@@ -38,7 +38,7 @@ const Navbar = () => {
               <Link to="/register" className="mr-4">
                 Register
               </Link>
-              <Link to="/blogs" className="mr-4">
+              <Link to="/all-blogs" className="mr-4">
                 All Blogs
               </Link>
             </>

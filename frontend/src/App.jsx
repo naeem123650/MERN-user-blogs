@@ -22,7 +22,7 @@ const App = () => {
         <Routes>
           <Route path="/login" element={<GuestLogin />} />
           <Route path="/register" element={<GuestRegister />} />
-          <Route path="/blogs" element={<BlogList />} />
+          <Route path="/all-blogs" element={<BlogList />} />
           <Route path="/" element={<BlogList />} />
           <Route path="/your-blogs" element={<ProtectedMyBlogs />} />
           <Route path="*" element={<Sorry />} />
