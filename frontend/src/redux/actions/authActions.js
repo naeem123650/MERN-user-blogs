@@ -47,7 +47,7 @@ export const register = (username, email, password) => async (dispatch) => {
 };
 
 export const logout = () => async (dispatch) => {
-  const res = await axios.post(`${api_url}logout`, "", {
+  const res = await axios.post(`${api_url}/logout`, "", {
     headers: { Authorization: `Bearer ${localStorage.getItem("token")}` },
   });
   console.log(res);
