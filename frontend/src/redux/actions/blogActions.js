@@ -22,8 +22,6 @@ export const fetchBlogs = () => async (dispatch) => {
       payload: res.data.data,
     });
   } catch (error) {
-    console.log(error.response.data.message);
-
     dispatch({
       type: FETCH_BLOGS_FAIL,
       payload: error.response.data.message,
@@ -42,8 +40,6 @@ export const fetchUserBlogs = () => async (dispatch) => {
       payload: res.data.data,
     });
   } catch (error) {
-    console.log(error.response.data.message);
-
     dispatch({
       type: USER_BLOG_FAIL,
       payload: error.response.data.message,
@@ -61,15 +57,11 @@ export const createBlog = (title, content) => async (dispatch) => {
       }
     );
 
-    console.log(res.data);
-
     dispatch({
       type: CREATE_BLOG_SUCCESS,
       payload: res.data,
     });
   } catch (error) {
-    console.log(error.response.data.message);
-
     dispatch({
       type: CREATE_BLOG_FAIL,
       payload: error.response.data.message,
@@ -87,15 +79,11 @@ export const updateBlog = (id, title, content) => async (dispatch) => {
       }
     );
 
-    console.log(res.data);
-
     dispatch({
       type: UPDATE_BLOG_SUCCESS,
       payload: res.data,
     });
   } catch (error) {
-    console.log(error.response.data.message);
-
     dispatch({
       type: UPDATE_BLOG_FAIL,
       payload: error.response.data.message,
@@ -113,7 +101,6 @@ export const deleteBlog = (id) => async (dispatch) => {
       payload: id,
     });
   } catch (error) {
-    console.log(error.response.data.message);
     dispatch({
       type: DELETE_BLOG_FAIL,
       payload: error.response.data.message,
